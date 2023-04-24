@@ -5,6 +5,6 @@ set(source_files
         algorithms/ModuleAlgorithms.h
         concepts/Tensor.hpp
         traits/Tensor.hpp
-        models/Linear.hpp models/Linear.hpp)
+        models/activations/Linear.hpp)
 
 add_library(Source ${source_files})
