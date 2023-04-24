@@ -4,7 +4,12 @@ add_executable(MLAlgosTests
 
 set(internal_libs Source)
 
-target_link_libraries(MLAlgosTests Catch2::Catch2 Catch2::Catch2WithMain ${internal_libs})
+target_link_libraries(MLAlgosTests
+        PRIVATE Catch2::Catch2 Catch2::Catch2WithMain ${internal_libs})
+
+target_link_libraries(MLAlgosTests PRIVATE
+        xtensor xtensor::optimize)
+
 target_include_directories(MLAlgosTests PUBLIC
         "${PROJECT_BINARY_DIR}"
         "${PROJECT_SOURCE_DIR}/src"

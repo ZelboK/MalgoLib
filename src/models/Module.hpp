@@ -5,11 +5,8 @@
 #ifndef MACHINELALGOS_SRC_MODELS_MODULE_HPP_
 #define MACHINELALGOS_SRC_MODELS_MODULE_HPP_
 #include <iostream>
-#include <concepts>
 
-
-template<class T, class A>
-requires std::is_arithmetic_v<T>
+template<class T>
 class Module
 {
  public:

@@ -9,6 +9,8 @@ add_executable(MachineLAlgos src/main.cpp)
 set(CMAKE_TOOLCHAIN_FILE /path/to/vcpkg/scripts/buildsystems/vcpkg.cmake)
 
 find_package(Catch2 CONFIG REQUIRED)
+find_package(xtensor CONFIG REQUIRED)
+
 target_include_directories(MachineLAlgos PUBLIC ${CMAKE_CURRENT_BINARY_DIR} src)
 
 enable_testing()

@@ -5,7 +5,7 @@
 		<Option title="MachineLAlgos"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\.clion-vcpkg\;CMake Files\..\..\..\..\.clion-vcpkg\vcpkg\;CMake Files\..\..\..\..\.clion-vcpkg\vcpkg\scripts\;CMake Files\..\..\..\..\.clion-vcpkg\vcpkg\scripts\buildsystems\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\vcpkg_installed\;CMake Files\cmake-build-debug\vcpkg_installed\x64-osx\;CMake Files\cmake-build-debug\vcpkg_installed\x64-osx\share\;CMake Files\cmake-build-debug\vcpkg_installed\x64-osx\share\Catch2\;CMake Files\src\;CMake Files\test\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\.clion-vcpkg\;CMake Files\..\..\..\..\.clion-vcpkg\vcpkg\;CMake Files\..\..\..\..\.clion-vcpkg\vcpkg\scripts\;CMake Files\..\..\..\..\.clion-vcpkg\vcpkg\scripts\buildsystems\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\vcpkg_installed\;CMake Files\cmake-build-debug\vcpkg_installed\x64-osx\;CMake Files\cmake-build-debug\vcpkg_installed\x64-osx\share\;CMake Files\cmake-build-debug\vcpkg_installed\x64-osx\share\Catch2\;CMake Files\cmake-build-debug\vcpkg_installed\x64-osx\share\xtensor\;CMake Files\cmake-build-debug\vcpkg_installed\x64-osx\share\xtl\;CMake Files\src\;CMake Files\test\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/danialjavady/Desktop/ksm/Organized/MalgoLib/cmake-build-debug"/>
@@ -197,6 +197,9 @@
 			<Option target="MachineLAlgos"/>
 			<Option target="Source"/>
 		</Unit>
+		<Unit filename="/Users/danialjavady/Desktop/ksm/Organized/MalgoLib/src/models/Linear.hpp">
+			<Option target="Source"/>
+		</Unit>
 		<Unit filename="/Users/danialjavady/Desktop/ksm/Organized/MalgoLib/src/models/Module.hpp">
 			<Option target="Source"/>
 		</Unit>
@@ -229,6 +232,24 @@
 		</Unit>
 		<Unit filename="/Users/danialjavady/Desktop/ksm/Organized/MalgoLib/cmake-build-debug/vcpkg_installed/x64-osx/share/Catch2/Catch2Targets.cmake">
 			<Option virtualFolder="CMake Files\cmake-build-debug\vcpkg_installed\x64-osx\share\Catch2\"/>
+		</Unit>
+		<Unit filename="/Users/danialjavady/Desktop/ksm/Organized/MalgoLib/cmake-build-debug/vcpkg_installed/x64-osx/share/xtensor/xtensorConfig.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\vcpkg_installed\x64-osx\share\xtensor\"/>
+		</Unit>
+		<Unit filename="/Users/danialjavady/Desktop/ksm/Organized/MalgoLib/cmake-build-debug/vcpkg_installed/x64-osx/share/xtensor/xtensorConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\vcpkg_installed\x64-osx\share\xtensor\"/>
+		</Unit>
+		<Unit filename="/Users/danialjavady/Desktop/ksm/Organized/MalgoLib/cmake-build-debug/vcpkg_installed/x64-osx/share/xtensor/xtensorTargets.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\vcpkg_installed\x64-osx\share\xtensor\"/>
+		</Unit>
+		<Unit filename="/Users/danialjavady/Desktop/ksm/Organized/MalgoLib/cmake-build-debug/vcpkg_installed/x64-osx/share/xtl/xtlConfig.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\vcpkg_installed\x64-osx\share\xtl\"/>
+		</Unit>
+		<Unit filename="/Users/danialjavady/Desktop/ksm/Organized/MalgoLib/cmake-build-debug/vcpkg_installed/x64-osx/share/xtl/xtlConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\vcpkg_installed\x64-osx\share\xtl\"/>
+		</Unit>
+		<Unit filename="/Users/danialjavady/Desktop/ksm/Organized/MalgoLib/cmake-build-debug/vcpkg_installed/x64-osx/share/xtl/xtlTargets.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\vcpkg_installed\x64-osx\share\xtl\"/>
 		</Unit>
 		<Unit filename="/Users/danialjavady/Desktop/ksm/Organized/MalgoLib/src/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\src\"/>

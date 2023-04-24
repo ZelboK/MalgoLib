@@ -239,6 +239,9 @@ MachineLAlgos_SOURCE_DIR:STATIC=/Users/danialjavady/Desktop/ksm/Organized/MalgoL
 //Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl
 
+//The directory containing a CMake configuration file for TBB.
+TBB_DIR:PATH=TBB_DIR-NOTFOUND
+
 //Automatically copy dependencies into the output directory for
 // executables.
 VCPKG_APPLOCAL_DEPS:BOOL=ON
@@ -303,6 +306,15 @@ Z_VCPKG_CL:FILEPATH=Z_VCPKG_CL-NOTFOUND
 //The directory which contains the installed libraries for each
 // triplet
 _VCPKG_INSTALLED_DIR:PATH=/Users/danialjavady/Desktop/ksm/Organized/MalgoLib/cmake-build-debug/vcpkg_installed
+
+//The directory containing a CMake configuration file for xsimd.
+xsimd_DIR:PATH=xsimd_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for xtensor.
+xtensor_DIR:PATH=/Users/danialjavady/Desktop/ksm/Organized/MalgoLib/cmake-build-debug/vcpkg_installed/x64-osx/share/xtensor
+
+//The directory containing a CMake configuration file for xtl.
+xtl_DIR:PATH=/Users/danialjavady/Desktop/ksm/Organized/MalgoLib/cmake-build-debug/vcpkg_installed/x64-osx/share/xtl
 
 
 ########################
@@ -460,4 +472,6 @@ VCPKG_VERBOSE-ADVANCED:INTERNAL=1
 Z_VCPKG_CHECK_MANIFEST_MODE:INTERNAL=ON
 //Vcpkg root directory
 Z_VCPKG_ROOT_DIR:INTERNAL=/Users/danialjavady/.clion-vcpkg/vcpkg
+//Test arch_native_supported
+arch_native_supported:INTERNAL=1
 

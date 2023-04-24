@@ -10,7 +10,7 @@
 namespace mla::concepts {
 	template <class I>
 	concept Tensor = requires {
-		typename tensor_value_t<I>; // Type of point (P)
+		typename tensor_value_t<I>;
 	};
 }
 
