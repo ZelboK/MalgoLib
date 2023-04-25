@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/Users/danialjavady/Desktop/ksm/Organized/MalgoLib/cmake-build-debug -I/Users/danialjavady/Desktop/ksm/Organized/MalgoLib/src -isystem /Users/danialjavady/Desktop/ksm/Organized/MalgoLib/cmake-build-debug/vcpkg_installed/x64-osx/include
 
-CXX_FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -march=native -std=c++20
+CXX_FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=c++20
 

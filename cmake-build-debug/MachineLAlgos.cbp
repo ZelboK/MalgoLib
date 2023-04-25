@@ -26,6 +26,7 @@
 				<Compiler>
 					<Add directory="/Users/danialjavady/Desktop/ksm/Organized/MalgoLib/cmake-build-debug"/>
 					<Add directory="/Users/danialjavady/Desktop/ksm/Organized/MalgoLib/src"/>
+					<Add directory="/Users/danialjavady/Desktop/ksm/Organized/MalgoLib/cmake-build-debug/vcpkg_installed/x64-osx/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include"/>
@@ -49,6 +50,7 @@
 				<Compiler>
 					<Add directory="/Users/danialjavady/Desktop/ksm/Organized/MalgoLib/cmake-build-debug"/>
 					<Add directory="/Users/danialjavady/Desktop/ksm/Organized/MalgoLib/src"/>
+					<Add directory="/Users/danialjavady/Desktop/ksm/Organized/MalgoLib/cmake-build-debug/vcpkg_installed/x64-osx/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include"/>
@@ -100,7 +102,6 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/danialjavady/Desktop/ksm/Organized/MalgoLib/cmake-build-debug/vcpkg_installed/x64-osx/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include"/>
@@ -122,7 +123,6 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/danialjavady/Desktop/ksm/Organized/MalgoLib/cmake-build-debug/vcpkg_installed/x64-osx/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include"/>

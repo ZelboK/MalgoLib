@@ -4,8 +4,10 @@
 
 #ifndef MACHINELALGOS_SRC_MODELS_LINEAR_HPP_
 #define MACHINELALGOS_SRC_MODELS_LINEAR_HPP_
+
+#include <xtensor.hpp>
 #include "models/Module.hpp"
-#include "models/Shape.hpp"
+#include "algorithms/ModuleAlgorithms.hpp"
 
 /*  represents the linear/dense layer activation function that performs
  *  a linear transformation on the incoming tensor and maps it to the output
@@ -16,16 +18,30 @@
  *  A: Linear weights/values?
  *  b: bias
  * */
-template<class T>
+
+template<class T, class Container>
+requires std::is_arithmetic_v<T>
 class Linear : public Module<T>
 {
  private:
-	// Private member variables for the Linear class
-	Shape shape;
-	T bias;
+//	Container weights;
+//  Container biases;
+	xt::xarray<T> weights; // Do we want to couple xtensor and the Linear implementation?
+	xt::xarray<T> bias;
  public:
-	// Constructor for the Linear class
-	Linear(int in_size, int out_size) : shape{0, out_size, in_size} {}
+	Linear(size_t in_size, size_t out_size) :
+		weights(xt::random::randn<T>({ out_size,
+									   in_size })),
+		bias(xt::random::randn<T>({ out_size }))
+	{
+	}
+
+	// is one better than the other?
+//	Linear(size_t in_size, size_t out_size)
+//	{
+//		this->weightss = ModuleAlgos::normalDistTensor<T>({out_size, in_size});
+//		this->biases = ModuleAlgos::normalDistTensor<T>({out_size});
+//	}
 
 	// Implementation of the forward method for the Linear class
 	T forward() override
@@ -34,7 +50,6 @@ class Linear : public Module<T>
 		// and return the output tensor
 	}
 };
-
 
 #endif //MACHINELALGOS_SRC_MODELS_LINEAR_HPP_
 
@@ -46,26 +61,10 @@ class Linear : public Module<T>
  * The dot product has to be compatible.
  * The linear layer consists of two tensors:
  * Weights and Biases.
- * Do we have enough information to conduct the Linear operation?
  *
  * A tensor should have shape:
  * R(input) x C(input)
  * R(linear) x C(linear)
- *
- * C(input) == R(linear)
- *
- *  It would seem as if the linear layer does NOT care about how many nodes
- *  it is connected to? Or better described as:
- *  The actual connection? Is done by something else.
- *
- *  So if i have a 4x3 input tensor
- *  and a Linear layer : Linear(4, 2)
- *  This won't work because 3!=4.
- *
- *  4x3 and Linear (3, 2)
- *  should work. My question is basically this: How the hell do i know what dimensions
- *  the linear layer should have?
- *
- * NO! Linear weights shape: (output_features, input_features)
+ * Linear weights shape: (output_features, input_features)
  * Linear biases shape: (output_features)
  */
