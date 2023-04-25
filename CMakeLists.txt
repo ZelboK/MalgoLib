@@ -12,6 +12,7 @@ find_package(Catch2 CONFIG REQUIRED)
 find_package(xtensor CONFIG REQUIRED)
 
 target_include_directories(MachineLAlgos PUBLIC ${CMAKE_CURRENT_BINARY_DIR} src)
+target_link_libraries(MachineLAlgos PRIVATE TensorAlgorithms)
 
 enable_testing()
 add_subdirectory(src)

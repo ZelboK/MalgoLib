@@ -9,5 +9,8 @@
 namespace ModuleAlgos {
 	template <class T>
 	T forward();
+
+	template <class T>
+	 
 }
 #endif //MACHINELALGOS_SRC_ALGORITHMS_MODULEALGORITHMS_H_
