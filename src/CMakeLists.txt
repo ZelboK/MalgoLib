@@ -6,6 +6,6 @@ set(source_files
         models/Module.hpp
         models/activations/Linear.hpp
         models/BatchNormalization.hpp
-        )
+        concepts/DefaultTypes.hpp)
 
 add_library(Source ${source_files})

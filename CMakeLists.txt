@@ -6,7 +6,8 @@ set(CMAKE_CXX_EXTENSIONS Off)
 set(CMAKE_CXX_STANDARD_REQUIRED On)
 set(CMAKE_EXPORT_COMPILE_COMMANDS On)
 add_executable(MachineLAlgos src/main.cpp)
-set(CMAKE_TOOLCHAIN_FILE /path/to/vcpkg/scripts/buildsystems/vcpkg.cmake)
+set(CMAKE_TOOLCHAIN_FILE
+        "-DCMAKE_TOOLCHAIN_FILE=${CMAKE_SOURCE_DIR}/vcpkg/scripts/buildsystems/vcpkg.cmake")
 
 find_package(Catch2 CONFIG REQUIRED)
 find_package(xtensor CONFIG REQUIRED)

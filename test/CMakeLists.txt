@@ -1,6 +1,6 @@
 
 add_executable(MLAlgosTests
-        MainTestSpec.cpp)
+        MainTestSpec.cpp ModuleAlgorithmsSpec.cpp)
 
 set(internal_libs Source)
 

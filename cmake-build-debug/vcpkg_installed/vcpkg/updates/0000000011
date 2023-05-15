@@ -1,8 +1,0 @@
-Package: xtensor
-Version: 0.24.3
-Depends: nlohmann-json, vcpkg-cmake, vcpkg-cmake-config, xtl
-Architecture: x64-osx
-Multi-Arch: same
-Abi: cc4b558d44214499253e819b07d6d23b482d891cce9e63d9457d8a40f2ff2f02
-Description: C++ tensors with broadcasting and lazy computing
-Status: install ok installed
